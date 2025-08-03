@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+    }
+    nav a {
+      margin: 0 1em;
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 1em;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    fieldset {
+      margin-top: 20px;
+    }
+    label {
+      display: inline-block;
+      width: 120px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1><span style="color:rgb(201, 55, 128);"> BLUE MOON Restaurant </span> </h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#form">Reservation</a>
+      <a href="#video">Video</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Menu Section with Table -->
+  <section id="menu">
+    <h2>🍽 Today's Menu</h2>
+    <table>
+      <caption>Menu Card</caption>
+      <thead>
+        <tr>
+          <th>Dish</th>
+          <th>Description</th>
+          <th>Price (&dollar;)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paneer Butter Masala</td>
+          <td>Creamy cottage cheese curry</td>
+          <td>8.99</td>
+        </tr>
+        <tr>
+          <td>Chicken Biryani</td>
+          <td>Spicy rice with marinated chicken</td>
+          <td>10.99</td>
+        </tr>
+        <tr>
+          <td>Veg Thali</td>
+          <td>Complete vegetarian platter</td>
+          <td>7.50</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Specials List -->
+  <section>
+    <h2>🌟 Weekly Offers </h2>
+    <ul>
+      <li>Monday - Butter Naan Combo</li>
+      <li>Wednesday - Ice Cream Day</li>
+      <li>Friday - Non Veg Combo</li>
+    </ul>
+  </section>
+
+  <!-- Form Section -->
+  <section id="form">
+    <h2>📝 Make a Reservation</h2>
+    <form action="/action_page.php" method="get">
+      <fieldset>
+        <legend>Reservation Details</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname"><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone"><br>
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date"><br>
+
+        <label for="time">Time:</label>
+        <input type="time" name="time" id="time"><br>
+
+        <label for="guests">No. of Guests:</label>
+        <input type="number" name="guests" id="guests" min="1"><br>
+
+        <label for="special">Special Item:</label>
+         <select name="Dish" id="dish">
+          <option value="Starters">Starters</option>
+          <option value="Butter Naan">Butter Naan</option>
+          <option value="Main Course">Main Course</option>
+          <option value="Biryani">Biryani</option>
+          <option value="Ice Cream">Ice Cream</option>
+         </select><br><br>
+
+        <label for="branch">Choose Branch:</label>
+        <select name="branch" id="branch">
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="hyd">Hyderabad</option>
+          <option value="bangalore">Bangalore</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Maharastra">Maharastra</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit"> 
+        <input type="reset" value="Reset"> 
+
+      </fieldset>
+    </form>
+  </section>
+
+    <!-- Working with Text -->
+    <section>
+        <h2>About Us</h2>
+        <p>At BLUE MOON, <span> </span> Where midnight cravings meets moonlight cooking </span> <span style="font-weight:bold;"> BLUE MOON: </span>made for nights worth remembering.</p>
+    </section>
+
+    <!-- Media Section -->
+      <section id="media">
+        <h2>🎵 Watch & Listen</h2>
+        <h3> Mini Restaurant clip:</h3>
+        <video width="470" height="340" controls>
+            <source src="c:\Users\lasya\Downloads\Dish.mp4.mp4" type="video/mp4">
+        </video>
+
+    <!-- Images -->
+    <section>
+        <h2>Menu Card</h2>
+        <img src="c:\Users\lasya\Downloads\ice cream.jpg" height="420" width="330">
+    </section>
+</section>
+
+  <!-- Contact & Bookmark -->
+  <section id="contact">
+    <h2>📞 Contact Us</h2>
+    <p>Email: <a href="mailto:info@bluemoon.com">info@bluemoon.com</a></p>
+    <p>Return to <a href="#menu">Menu Section</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+        <p> <span style="font-weight:bold"> "The moon is the reflection of your heart, and moonlight is the twinkle of your love."</p>
+    <!-- HTML Comment: This is the footer section -->
+  </footer>
+</body>
+</html>
